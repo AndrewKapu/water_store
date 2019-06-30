@@ -1,0 +1,68 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu__link {
+    color: blue;
+    text-decoration: none;
+    font-size: 19px;
+    font-style: italic;
+}
+
+.catalog-product-img {
+    width: 200px;
+}
+
+.catalog-product-img_style {
+    border: 7px solid #186c9e;
+}
+
+/* Заголовки на странице с товаром */
+.product-headings {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.short-description {
+    color: #707070;
+    font-size: #707070;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.detailed-description {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.product-characteristics {
+    list-style-image: url(img/marker.gif)
+}
+
+.product-characteristics__value {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.feedback-form__input {
+    height: 20px;
+    width: 250px;
+    font-size: 14px;
+    color: black;
+}
+
+.feedback-form__textarea {
+    height: 200px;
+    width: 300px;
+}
+
+
