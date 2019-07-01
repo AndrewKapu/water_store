@@ -4,24 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Вода Fiji</title>
+    <title>Вода Vittel</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <ul class="menu">
-        <li><a href="../index.html" class="menu__link">Главная</a></li>
-        <li><a href="../catalog.html" class="menu__link">Каталог</a></li>
-        <li><a href="../contacts.html" class="menu__link">Контакты</a></li>
-    </ul>
+    <header class="header">
+        <div class="logo"> <a href="../index.html"><img src="../img/logo.png" alt="logo" class="logo__image"></a></div>
+        <ul class="menu">
+            <li><a href="../index.html" class="menu__link menu__link_hover">Главная</a></li>
+            <li><a href="../catalog.html" class="menu__link menu__link_hover">Каталог</a></li>
+            <li><a href="../contacts.html" class="menu__link menu__link_hover">Контакты</a></li>
+        </ul>
+    </header class="header">
     <hr>
     <h2>Вода Vittel</h2>
     <a href="../img/vittel.jpg" target="_blank"><img src="../img/vittel.jpg" alt="Vittel water"
-            class="catalog-product-img  catalog-product-img_style"></a>
+            class="catalog-product-img  catalog-product-img_style catalog-product-img_hover"></a>
     <hr>
-    <h3 class="product-headings short-description">Описание товара</h3>
+    <h3 class="product-headings">Описание товара</h3>
     <p class="short-description">Nestle, Франция. Разлито на&nbsp;источнике Виттель Бон Сурс.</p>
     <h3 class="product-headings">Характеристики</h3>
+    <table class="product-characteristics-table">
+            <tr>
+                <td colspan="4">Доступна закупка оптом (штук)</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>8</td>
+                <td>16</td>
+                <td>32</td>
+            </tr>
+    </table>
     <ul class="product-characteristics">
         <li class="product-characteristics__value">Вид воды: Минеральная, Питьевая, Артезианская</li>
         <li class="product-characteristics__value">Степень газирования: негазированная</li>
@@ -34,7 +48,9 @@
         сбалансированным минеральным составом и&nbsp;ежедневно обеспечивает Вас
         минералами и&nbsp;олиго-элементами, необходимыми для хорошего самочувствия.</p>
     <hr>
-    <p>Все права защищены 2019</p>
+    <footer class="footer">
+        <p>Все права защищены 2019&copy;</p>
+    </footer class="footer">
 </body>
 
 </html>

@@ -2,6 +2,10 @@ body {
     background-color: #f8f8f8;
 }
 
+.logo__image {
+    width: 100px;
+}
+
 .menu {
     list-style-type: none;
 }
@@ -13,8 +17,16 @@ body {
     font-style: italic;
 }
 
+.menu__link_hover:hover {
+    color: rgb(30, 193, 63);
+}
+
 .catalog-product-img {
     width: 200px;
+}
+
+.catalog-product-img_hover:hover {
+    border-color: transparent;
 }
 
 .catalog-product-img_style {
@@ -31,9 +43,15 @@ body {
 
 .short-description {
     color: #707070;
-    font-size: #707070;
+    font-size: 14px;
     font-style: italic;
     line-height: 16px;
+}
+
+.short-description::first-letter, .detailed-description::first-letter {
+    font-size: 25px;
+    font-style: italic;
+    color: blue;
 }
 
 .detailed-description {
@@ -53,6 +71,18 @@ body {
     font-weight: 600;
 }
 
+.product-characteristics-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.product-characteristics-table td {
+    border: 1px solid black;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+
 .feedback-form__input {
     height: 20px;
     width: 250px;
@@ -60,9 +90,17 @@ body {
     color: black;
 }
 
+.feedback-form__input_email-focus:focus {
+    background-color: yellow;
+    color: black;
+}
+
+.feedback-form__input_first-letter:focus {
+    text-transform: capitalize;
+}
+
+
 .feedback-form__textarea {
     height: 200px;
     width: 300px;
 }
-
-
