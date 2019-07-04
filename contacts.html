@@ -10,48 +10,53 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo"> <a href="index.html"><img src="img/logo.png" alt="logo" class="logo__image"></a></div>
-        <ul class="menu">
-            <li><a href="index.html" class="menu__link menu__link_hover">Главная</a></li>
-            <li><a href="catalog.html" class="menu__link menu__link_hover">Каталог</a></li>
-            <li><a href="contacts.html" class="menu__link menu__link_hover">Контакты</a></li>
-        </ul>
-    </header class="header">
-    <hr>
-    <h2>Напишите нам</h2>
-    <hr>
-    <form action="#" class="feedback-form">
-        <label class="feedback-form__label">Имя<input type="text" placeholder="Иван"
-                class="feedback-form__input feedback-form__input_first-letter"></label><br>
-        <label class="feedback-form__label">Email<input type="email" placeholder="example@gmail.com"
-                class="feedback-form__input feedback-form__input_email-focus feedback-form__input_first-letter"></label><br>
-        <label class="feedback-form__label">Тема<input type="text" placeholder="пожелания"
-                class="feedback-form__input feedback-form__input_first-letter"></label><br>
-        <h4>Ваш пол</h4>
-        <label>
-            М <input type="radio" name="gender">
-        </label>
-        <label>
-            Ж <input type="radio" name="gender">
-        </label>
-        <br>
-        <label>Пожелания <br><textarea class="feedback-form__textarea"></textarea></label><br>
-        <button type="submit">Отправить</button>
-        <button type="reset">Очистить</button>
-    </form>
-    <h2>Адрес</h2>
-    <ul>
-        <li>Телефон - 8 8000 888 88 88</li>
-        <li>Адрес - Москва, Тверская, 4</li>
-    </ul>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.9569179025825!2d37.61035721532473!3d55.75925059896293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a394b8fce43%3A0x655451d2f4ab466c!2z0KLQstC10YDRgdC60LDRjyDRg9C7LiwgNCwg0JzQvtGB0LrQstCwLCAxMjUwMDk!5e0!3m2!1sru!2sru!4v1561737059299!5m2!1sru!2sru"
-        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <hr>
-    <footer class="footer">
-        <p>Все права защищены 2019&copy;</p>
-    </footer class="footer">
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="logo"> <a href="index.html"><img src="img/logo.png" alt="logo" class="logo__image"></a>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html" class="menu__link menu__link_hover">Главная</a></li>
+                    <li><a href="catalog.html" class="menu__link menu__link_hover">Каталог</a></li>
+                    <li><a href="contacts.html" class="menu__link menu__link_hover">Контакты</a></li>
+                </ul>
+            </header class="header">
+            <hr>
+            <h2>Напишите нам</h2>
+            <hr>
+            <form action="#" class="feedback-form">
+                <label class="feedback-form__label"><span>Имя</span><input type="text" placeholder="Иван"
+                        class="feedback-form__input feedback-form__input_first-letter"></label>
+                <label class="feedback-form__label"><span>Email</span><input type="email"
+                        placeholder="example@gmail.com"
+                        class="feedback-form__input feedback-form__input_email-focus"></label>
+                <label class="feedback-form__label"><span>Тема</span><input type="text" placeholder="пожелания"
+                        class="feedback-form__input feedback-form__input_first-letter"></label>
+                <h4>Ваш пол</h4>
+                <label>
+                    М <input type="radio" name="gender">
+                </label>
+                <label>
+                    Ж <input type="radio" name="gender">
+                </label>
+                <br>
+                <label>Пожелания <br><textarea class="feedback-form__textarea"></textarea></label><br>
+                <button type="submit">Отправить</button>
+                <button type="reset">Очистить</button>
+            </form>
+            <h2>Адрес</h2>
+            <ul>
+                <li>Телефон - 8 8000 888 88 88</li>
+                <li>Адрес - Москва, Тверская, 4</li>
+            </ul>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.9569179025825!2d37.61035721532473!3d55.75925059896293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a394b8fce43%3A0x655451d2f4ab466c!2z0KLQstC10YDRgdC60LDRjyDRg9C7LiwgNCwg0JzQvtGB0LrQstCwLCAxMjUwMDk!5e0!3m2!1sru!2sru!4v1561737059299!5m2!1sru!2sru"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <footer class="footer">
+            <p>Все права защищены 2019&copy;</p>
+        </footer class="footer">
+    </div>
 </body>
 
 </html>

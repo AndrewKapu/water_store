@@ -1,5 +1,35 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+
 body {
     background-color: #f8f8f8;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    flex: 1 0 auto;
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("img/header-bg.jpg")
+}
+
+.logo {
+    margin-left: 20px;
 }
 
 .logo__image {
@@ -8,10 +38,16 @@ body {
 
 .menu {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu>li {
+    margin-left: 10px;
 }
 
 .menu__link {
-    color: blue;
+    color: #00f3fff2;
     text-decoration: none;
     font-size: 19px;
     font-style: italic;
@@ -19,6 +55,17 @@ body {
 
 .menu__link_hover:hover {
     color: rgb(30, 193, 63);
+}
+
+.catalog-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-wrapper a {
+    margin: 20px 20px;
+    text-decoration: none;
+    text-align: center;
 }
 
 .catalog-product-img {
@@ -41,6 +88,49 @@ body {
     background-color: #eaeaea;
 }
 
+.product-wrapper {
+    display: flex;
+}
+
+.product-wrapper__text {
+    display: flex;
+    flex-direction: column;
+    margin-top: -18px;
+    align-items: center;
+}
+
+.product-wrapper__buybtn {
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+    align-self: center;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 35px;
+    position: absolute;
+}
+
+.product-wrapper__buybtn_hover:hover {
+    background-color: blue;
+    color: aquamarine;
+}
+
+.buybtn-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+    width: 100px;
+}
+
+.product-wrapper__buybtn_active:active {
+    top: 10px;
+    left: 10px;
+    box-shadow: -10px -10px 0px grey;
+}
+
 .short-description {
     color: #707070;
     font-size: 14px;
@@ -48,7 +138,8 @@ body {
     line-height: 16px;
 }
 
-.short-description::first-letter, .detailed-description::first-letter {
+.short-description::first-letter,
+.detailed-description::first-letter {
     font-size: 25px;
     font-style: italic;
     color: blue;
@@ -86,8 +177,12 @@ body {
 .feedback-form__input {
     height: 20px;
     width: 250px;
-    font-size: 14px;
+    font-size: 16px;
     color: black;
+}
+
+.feedback-form span {
+    margin-right: 10px;
 }
 
 .feedback-form__input_email-focus:focus {
@@ -103,4 +198,23 @@ body {
 .feedback-form__textarea {
     height: 200px;
     width: 300px;
+}
+
+.footer {
+    height: 100px;
+    background-color: #4085f5;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+}
+
+.container iframe {
+    width: 100%;
+    height: 374px;
+}
+
+.some-class {
+    color: gray;
 }
